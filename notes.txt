@@ -1,0 +1,33 @@
+Full Stack
+
+After-School Courses Calendar SaaS
+ 
+Full Stack Notes App with User Verification
+
+
+
+Cloud & Distributed Programming
+
+Semantic Similarity System
+
+Hebrew Word-Prediction System Using MapReduce
+
+Cloud File Processor
+
+
+Graphics & Gaming / Computer Graphics
+
+Ray Tracing Engine
+
+Rubik's Cube Renderer (OpenGL)
+
+Image Filters and Processing
+
+Set Card Game Implementation
+
+Systems & Networking : 
+
+TFTP Server & Client
+
+Warehouse Management System (C++)
+

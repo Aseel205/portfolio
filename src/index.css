@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 20% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 20% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 210 20% 6%;
+
+    --secondary: 210 20% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 20% 12%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 210 20% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 15%;
+    --input: 210 20% 12%;
+    --ring: 195 100% 50%;
+
+    /* Custom portfolio colors */
+    --hero-gradient: linear-gradient(135deg, hsl(210 20% 6%) 0%, hsl(220 25% 10%) 50%, hsl(195 20% 8%) 100%);
+    --tech-glow: 195 100% 50%;
+    --accent-purple: 280 100% 70%;
+    --surface-glass: 210 20% 8% / 0.8;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--tech-glow) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(210 20% 2% / 0.5);
+    --shadow-intense: 0 20px 60px -20px hsl(var(--tech-glow) / 0.4);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keep same dark theme for consistent experience */
+    --background: 210 20% 6%;
+    --foreground: 210 40% 98%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
