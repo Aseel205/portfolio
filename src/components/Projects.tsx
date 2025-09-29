@@ -5,27 +5,7 @@ import { ExternalLink, Github, Server, Brain, Network, Monitor, Cloud } from 'lu
 
 const Projects = () => {
   const  projects = [
-    // --- Full Stack ---
-    {
-      title: "After-School Courses Calendar SaaS (commercial)",
-      description: "Multi-tenant SaaS platform for managing educational courses with advanced scheduling, user management, and real-time updates. Built with modern architecture and cloud deployment.",
-      techStack: [".NET Core 7", "React", "AWS", "Docker", "PostgreSQL", "Microservices"],
-      icon: Server,
-      features: ["Multi-tenant architecture", "Real-time notifications", "Advanced scheduling", "Cloud deployment"],
-      color: "tech-glow",
-      category: "Full Stack"
-    },
-    {
-      title: "Notes App with User Verification (MERN stack)",
-      description: "A full stack web application for managing personal notes, with user authentication and verification features. Built using React, Node.js, and a JSON-based backend.",
-      techStack: ["React", "Express", "Axios", "MongoDB", "PostMan", "Node.js"],
-      icon: ExternalLink,
-      github: "https://github.com/Aseel205/Notes-Manager-Full-Stack-MERN-App-",
-      features: ["Create, view, and paginate notes", "User registration and login", "Authentication and session handling", "Persistent storage using JSON server"],
-      color: "pink-400",
-      category: "Full Stack"
-    },
-  
+      
     // --- Cloud & Distributed Programming ---
     {
       title: "Semantic Similarity System",
@@ -67,7 +47,7 @@ const Projects = () => {
       github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Ray%20Tracing%20Implementation",
       features: ["Realistic lighting", "Ray-traced reflections", "Anti-aliasing", "Shader effects"],
       color: "blue-400",
-      category: "Graphics & Gaming / Computer Graphics"
+      category: "Computer Graphics/Vision "
     },
     {
       title: "Rubik's Cube Renderer (OpenGL)",
@@ -77,7 +57,7 @@ const Projects = () => {
       github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Rubik's%20Cube%20Renderer",
       features: ["Perspective camera view", "Textured cube mesh with transformations", "Keyboard and mouse rotation controls", "Interactive color picking and manipulation"],
       color: "orange-400",
-      category: "Graphics & Gaming / Computer Graphics"
+      category: "Computer Graphics/Vision "
     },
     {
       title: "Image Filters and Processing",
@@ -87,17 +67,54 @@ const Projects = () => {
       github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Image%20Filters%20and%20Processing/computerGraphics-main",
       features: ["Grayscale conversion with full pixel intensity range (0–255)", "Canny edge detection with Gaussian filtering and gradient analysis", "Halftone pattern transformation for pixelated effects", "Floyd-Steinberg dithering for natural grayscale level reduction"],
       color: "red-400",
-      category: "Graphics & Gaming / Computer Graphics"
+      category: "Computer Graphics/Vision "
+    },
+
+    {
+      title: "Action Segmentation from Videos",
+      description: "Python project for video action segmentation and classification using deep learning. Built complete pipelines for preprocessing, feature extraction, training, and evaluation on custom workflow videos.",
+      techStack: ["Python", "Image Processing", "Computer Vision", "Machine Learning"],
+      icon: Monitor,
+      github: "https://github.com/your-repo-link", // replace with your actual repo link
+      features: [
+        "Python-based video preprocessing & labeling",
+        "Feature extraction and dataset preparation",
+        "Deep learning model training & evaluation",
+        "Accurate segmentation of custom workflow videos"
+      ],
+      color: "purple-400",
+      category: "Computer Graphics/Vision "
+    } , 
+            // --- Full Stack ---
+    {
+      title: "After-School Courses Calendar SaaS (commercial)",
+      description: "Multi-tenant SaaS platform for managing educational courses with advanced scheduling, user management, and real-time updates. Built with modern architecture and cloud deployment.",
+      techStack: [".NET Core 7", "React", "AWS", "Docker", "PostgreSQL", "Microservices"],
+      icon: Server,
+      features: ["Multi-tenant architecture", "Real-time notifications", "Advanced scheduling", "Cloud deployment"],
+      color: "tech-glow",
+      category: "Full Stack"
     },
     {
-      title: "Set Card Game (Multiple Players)",
+      title: "Notes App with User Verification (MERN stack)",
+      description: "A full stack web application for managing personal notes, with user authentication and verification features. Built using React, Node.js, and a JSON-based backend.",
+      techStack: ["React", "Express", "Axios", "MongoDB", "PostMan", "Node.js"],
+      icon: ExternalLink,
+      github: "https://github.com/Aseel205/Notes-Manager-Full-Stack-MERN-App-",
+      features: ["Create, view, and paginate notes", "User registration and login", "Authentication and session handling", "Persistent storage using JSON server"],
+      color: "pink-400",
+      category: "Full Stack"
+    },
+
+    {
+      title: "Mulit - threaded  Set Card Game ",
       description: "Implemented a extended version of the Set Card Game in Java. with muliple Players emphsizing on threads programming.",
       techStack: ["Threads", "Game Logic", "UI Handling", "Event Processing" ,  ],
       icon: Brain,
       github: "https://github.com/Aseel205/Systems-programming/tree/main/Set%20Card%20Game",
       features: ["Cards with four features: color, number, shape, shading", "Valid set detection: each feature either all same or all different", "Interactive game logic and selection validation"],
       color: "yellow-400",
-      category: "Graphics & Gaming / Computer Graphics"
+      category: "Systems & Networking"
     },
   
     // --- Systems & Networking ---

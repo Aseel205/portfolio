@@ -35,8 +35,13 @@ const Skills = () => {
     {
       title: "Networking",
       icon: Network,
-      skills: ["HTTP", "Sockets", "FTP", "TCP/UDP", "Client-Server Models", "IP"],
-      color: "green-400"
+      skills: [
+        "IP Addressing & Routing",
+        "Transport Layer (TCP/UDP)",
+        "Application Layer (HTTP, DNS, SMTP)",
+        "Protocols & Standards",
+        "Client-Server Model"
+      ]    
     },
     {
       title: "Frontend",
