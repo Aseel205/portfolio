@@ -35,20 +35,40 @@ const Experience = () => {
       color: "accent-purple"
     },
     {
-      year: "2023-2025",
-      title: "Peer Supporter",
-      organization: "Ben-Gurion University",
-      type: "leadership",
-      icon: Users,
-      description: "Provided peer support services, facilitating community building and student wellness initiatives.",
+      year: "2025",
+      title: "Place-IL Talent Pool – Development Track",
+      organization: "Place-IL (National Tech Program)",
+      type: "experience",
+      icon: Award,
+      description:
+        "Selected for Israel’s national talent pool for software engineering candidates, providing structured pathways to top tech internships.",
       highlights: [
-        "Community leadership",
-        "Student wellness advocacy", 
-        "Event organization",
-        "Conflict resolution"
+        "Accepted under the Development Track",
+        "Highly selective national program",
+        "Bridges candidates to industry internships",
+        "Professional evaluations & technical screening"
       ],
-      color: "green-400"
+      color: "yellow-400"
     },
+
+    {
+      year: "2025",
+      title: "MST Java Microservices & DevOps Program",
+      organization: "MST Training Center",
+      type: "education",
+      icon: GraduationCap,
+      description:
+        "Completing a 4.5-month intensive program focused on backend development, microservices, and DevOps tooling.",
+      highlights: [
+        "300+ hours of hands-on training",
+        "Spring Boot & Java backend development",
+        "Microservices architecture",
+        "Docker, Kubernetes, SQL/MongoDB, Kafka",
+      ],
+      color: "blue-400"
+    },
+    
+  
     {
       year: "Ongoing",
       title: "Personal Development",

@@ -1,28 +1,73 @@
-# Aseel Biadsy - Personal Portfolio
+# Welcome to your Lovable project
 
-Welcome to my personal portfolio! My name is **Aseel Nassim Biadsy**, and I am passionate about coding, software development, and building meaningful projects.
+## Project info
 
-## 🌟 About Me
+**URL**: https://lovable.dev/projects/1f473af8-fe12-4e1a-b237-98b26c5bdbec
 
-I specialize in full-stack development and enjoy working on projects that combine creativity with technology. Through this portfolio, you can see the projects I've worked on, my skills, and my journey in the tech world.
+## How can I edit this code?
 
-## 💻 Projects
+There are several ways of editing your application.
 
-Here you can explore my projects, which include web applications, full-stack projects, and experimental coding work. Each project showcases my approach to problem-solving and my technical skills.
+**Use Lovable**
 
-## 📌 Features
+Simply visit the [Lovable Project](https://lovable.dev/projects/1f473af8-fe12-4e1a-b237-98b26c5bdbec) and start prompting.
 
-* Easy-to-navigate interface
-* Responsive design for all devices
-* Clear showcase of projects and skills
-* Links to GitHub repositories for more details
+Changes made via Lovable will be committed automatically to this repo.
 
-## 📬 Contact
+**Use your preferred IDE**
 
-You can reach me through:
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-* **Email:** [aseelbiadse.jobs@gmail.com](mailto:aseelbiadse.jobs@gmail.com)
-* **GitHub:** [Aseel205](https://github.com/Aseel205)
-* **Portfolio:** [aseel205.github.io/portfolio](https://aseel205.github.io/portfolio/)
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Thank you for visiting my portfolio! Feel free to explore and connect.
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/1f473af8-fe12-4e1a-b237-98b26c5bdbec) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

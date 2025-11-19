@@ -1,144 +1,163 @@
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, Server, Brain, Network, Monitor, Cloud } from 'lucide-react';
+import { ExternalLink, Github, Server, Brain, Monitor, Cloud } from 'lucide-react';
+import { Network as NetworkIcon } from "lucide-react";
+
 
 const Projects = () => {
-  const  projects = [
-      
-    // --- Cloud & Distributed Programming ---
-    {
-      title: "Semantic Similarity System",
-      description: "Distributed NLP system on AWS using MapReduce for large-scale Hebrew text analysis. Implements advanced semantic similarity algorithms with machine learning classification.",
-      techStack: ["Java", "AWS EMR", "MapReduce", "Machine Learning", "NLP", "Distributed Systems" , "Hadoop"],
-      icon: Brain,
-      github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/Semantic%20Similarity%20-%20Classification%20by%20various",
-      features: ["Google Syntactic N-Grams", "MapReduce processing", "ML classification", "Scalable architecture"],
-      color: "accent-purple",
-      category: "Cloud & Distributed Programming"
-    },
-    {
-      title: "Hebrew Word-Prediction System Using MapReduce",
-      description: "Builds a knowledge base for Hebrew word-prediction using Google 3-Gram Hebrew dataset. Implements MapReduce on AWS EMR to compute conditional probabilities for trigrams and remove stop words.",
-      techStack: ["Java", "AWS EMR", "MapReduce", "Distributed Systems", "Data Processing" ,  "Hadoop"],
-      icon: Brain,
-      github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/Knowledge-base%20for%20Word%20Prediction",
-      features: ["Conditional probability calculation for word trigrams", "Stop word removal", "Large-scale data processing", "Scalable MapReduce implementation"],
-      color: "violet-400",
-      category: "Cloud & Distributed Programming"
-    },
-    {
-      title: "Cloud File Processor",
-      description: "Distributed cloud-based system for processing PDF files using AWS services. Implements scalable architecture with SQS, EC2, and S3 for handling large document workflows.",
-      techStack: ["AWS EC2", "AWS S3", "AWS SQS", "Distributed Systems", "Python", "Docker"],
-      icon: Cloud,
-      github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/PDF%20Document%20Conversion%20in%20the%20Cloud/implementation",
-      features: ["Distributed processing", "Auto-scaling", "Queue management", "Cloud-native design"],
-      color: "cyan-400",
-      category: "Cloud & Distributed Programming"
-    },
-  
-    // --- Graphics & Gaming / Computer Graphics ---
-    {
-      title: "Ray Tracing Engine",
-      description: "Advanced 3D rendering engine built from scratch using C++ and OpenGL. Features realistic lighting, reflections, transparency, and anti-aliasing using mathematical optics principles.",
-      techStack: ["C++", "OpenGL", "Computer Graphics", "3D Rendering", "Shader Programming"],
-      icon: Monitor,
-      github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Ray%20Tracing%20Implementation",
-      features: ["Realistic lighting", "Ray-traced reflections", "Anti-aliasing", "Shader effects"],
-      color: "blue-400",
-      category: "Computer Graphics/Vision "
-    },
-    {
-      title: "Rubik's Cube Renderer (OpenGL)",
-      description: "Rendered a dynamic Rubik's cube in 3D using OpenGL and C++. Implements perspective camera, textured cube meshes, rotation controls, and color picking for interactive manipulation.",
-      techStack: ["C++", "OpenGL", "3D Rendering", "Graphics Programming", "Shaders"],
-      icon: Monitor,
-      github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Rubik's%20Cube%20Renderer",
-      features: ["Perspective camera view", "Textured cube mesh with transformations", "Keyboard and mouse rotation controls", "Interactive color picking and manipulation"],
-      color: "orange-400",
-      category: "Computer Graphics/Vision "
-    },
-    {
-      title: "Image Filters and Processing",
-      description: "Implemented various image filters and processing algorithms in C++ to transform images and generate multiple filtered versions. Applies classic computer vision techniques for enhancement, analysis, and stylization of images.",
-      techStack: ["C++", "OpenCV", "Image Processing", "Computer Vision"],
-      icon: Monitor,
-      github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Image%20Filters%20and%20Processing/computerGraphics-main",
-      features: ["Grayscale conversion with full pixel intensity range (0–255)", "Canny edge detection with Gaussian filtering and gradient analysis", "Halftone pattern transformation for pixelated effects", "Floyd-Steinberg dithering for natural grayscale level reduction"],
-      color: "red-400",
-      category: "Computer Graphics/Vision "
-    },
+    const projects = [
 
-    {
-      title: "Action Segmentation from Videos",
-      description: "Python project for video action segmentation and classification using deep learning. Built complete pipelines for preprocessing, feature extraction, training, and evaluation on custom workflow videos.",
-      techStack: ["Python", "Image Processing", "Computer Vision", "Machine Learning"],
-      icon: Monitor,
-      github: "https://github.com/your-repo-link", // replace with your actual repo link
-      features: [
-        "Python-based video preprocessing & labeling",
-        "Feature extraction and dataset preparation",
-        "Deep learning model training & evaluation",
-        "Accurate segmentation of custom workflow videos"
-      ],
-      color: "purple-400",
-      category: "Computer Graphics/Vision "
-    } , 
-            // --- Full Stack ---
-    {
-      title: "After-School Courses Calendar SaaS (commercial)",
-      description: "Multi-tenant SaaS platform for managing educational courses with advanced scheduling, user management, and real-time updates. Built with modern architecture and cloud deployment.",
-      techStack: [".NET Core 7", "React", "AWS", "Docker", "PostgreSQL", "Microservices"],
-      icon: Server,
-      features: ["Multi-tenant architecture", "Real-time notifications", "Advanced scheduling", "Cloud deployment"],
-      color: "tech-glow",
-      category: "Full Stack"
-    },
-    {
-      title: "Notes App with User Verification (MERN stack)",
-      description: "A full stack web application for managing personal notes, with user authentication and verification features. Built using React, Node.js, and a JSON-based backend.",
-      techStack: ["React", "Express", "Axios", "MongoDB", "PostMan", "Node.js"],
-      icon: ExternalLink,
-      github: "https://github.com/Aseel205/Notes-Manager-Full-Stack-MERN-App-",
-      features: ["Create, view, and paginate notes", "User registration and login", "Authentication and session handling", "Persistent storage using JSON server"],
-      color: "pink-400",
-      category: "Full Stack"
-    },
+       // --- Cloud & Distributed Programming ---
+       {
+        title: "Semantic Similarity System",
+        description: "Distributed NLP system on AWS using MapReduce for large-scale Hebrew text analysis. Implements semantic similarity algorithms with machine learning classification.",
+        techStack: ["Java", "AWS EMR", "MapReduce", "Machine Learning", "NLP", "Hadoop"],
+        icon: Brain,
+        github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/Semantic%20Similarity%20-%20Classification%20by%20various",
+        features: ["Google Syntactic N-Grams", "MapReduce processing", "ML classification", "Scalable architecture"],
+        color: "accent-purple",
+        category: "Cloud & Distributed Programming"
+      },
+      {
+        title: "Hebrew Word Prediction (MapReduce)",
+        description: "Large-scale Hebrew trigram dataset processing for next-word prediction. Implements MapReduce jobs to compute conditional probabilities and remove stop words.",
+        techStack: ["Java", "AWS EMR", "MapReduce", "Distributed Systems", "Hadoop"],
+        icon: Brain,
+        github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/Knowledge-base%20for%20Word%20Prediction",
+        features: ["Conditional probability", "Large-scale trigram analysis", "Stop-word removal", "Distributed pipeline"],
+        color: "violet-400",
+        category: "Cloud & Distributed Programming"
+      },
+      {
+        title: "Cloud File Processor",
+        description: "Distributed system for processing PDF files on AWS using EC2 workers, SQS queues, and S3 storage.",
+        techStack: ["AWS EC2", "AWS S3", "AWS SQS", "Distributed Systems", "Python", "Docker"],
+        icon: Cloud,
+        github: "https://github.com/Aseel205/Distributed-systems-programming/tree/main/PDF%20Document%20Conversion%20in%20the%20Cloud/implementation",
+        features: ["Queue orchestration", "Parallel workers", "Auto-scaling", "Fault-tolerant design"],
+        color: "cyan-400",
+        category: "Cloud & Distributed Programming"
+      },
+        // --- Graphics & Gaming / Computer Graphics ---
+      {
+        title: "Ray Tracing Engine",
+        description: "Advanced 3D rendering engine using C++ and OpenGL with real reflections, shadows, transparency, and anti-aliasing.",
+        techStack: ["C++", "OpenGL", "3D Rendering", "Shader Programming"],
+        icon: Monitor,
+        github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Ray%20Tracing%20Implementation",
+        features: ["Realistic lighting", "Ray tracing", "Anti-aliasing", "Shader effects"],
+        color: "blue-400",
+        category: "Graphics & Computer Vision"
+      },
+      {
+        title: "Rubik's Cube Renderer",
+        description: "3D interactive Rubik’s Cube renderer using OpenGL with camera controls and real-time transformations.",
+        techStack: ["C++", "OpenGL", "3D Rendering", "Graphics Programming"],
+        icon: Monitor,
+        github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Rubik's%20Cube%20Renderer",
+        features: ["Perspective camera", "Cube mesh rendering", "Rotation controls", "Color picking"],
+        color: "orange-400",
+        category: "Graphics & Computer Vision"
+      },
+      {
+        title: "Image Filters & Computer Vision",
+        description: "Implemented classical image processing techniques including grayscale, Canny edge detection, dithering, and halftoning.",
+        techStack: ["C++", "OpenCV", "Image Processing"],
+        icon: Monitor,
+        github: "https://github.com/Aseel205/ComputerGraphics/tree/main/Image%20Filters%20and%20Processing/computerGraphics-main",
+        features: ["Canny edges", "Halftone filter", "Floyd-Steinberg dithering", "Grayscale conversion"],
+        color: "red-400",
+        category: "Graphics & Computer Vision"
+      },
 
-    {
-      title: "Mulit - threaded  Set Card Game ",
-      description: "Implemented a extended version of the Set Card Game in Java. with muliple Players emphsizing on threads programming.",
-      techStack: ["Threads", "Game Logic", "UI Handling", "Event Processing" ,  ],
-      icon: Brain,
-      github: "https://github.com/Aseel205/Systems-programming/tree/main/Set%20Card%20Game",
-      features: ["Cards with four features: color, number, shape, shading", "Valid set detection: each feature either all same or all different", "Interactive game logic and selection validation"],
-      color: "yellow-400",
-      category: "Systems & Networking"
-    },
-  
-    // --- Systems & Networking ---
-    {
-      title: "TFTP Server & Client",
-      description: "High-performance multi-threaded file transfer system implementing TFTP protocol with broadcast support and Thread-per-Client architecture for concurrent connections.",
-      techStack: ["Java", "Networking", "Multithreading", "TCP/UDP", "Protocol Design" ,  "Reactor"],
-      icon: Network,
-      github: "https://github.com/Aseel205/Systems-programming/tree/main/TFTP%20Server%20client",
-      features: ["Multithreaded design", "Broadcast support", "Protocol implementation", "Concurrent handling"],
-      color: "green-400",
-      category: "Systems & Networking"
-    },
-    {
-      title: "Warehouse Management System (C++)",
-      description: "Designed an object-oriented Food Warehouse Management System using C++. Simulates warehouse operations, manages volunteers, customers, and orders, focusing on efficient memory management and avoiding leaks.",
-      techStack: ["C++", "OOP", "Memory Management", "Data Structures"],
-      icon: Server,
-      github: "https://github.com/Aseel205/Systems-programming/tree/main/WareHouse/Spl",
-      features: ["Volunteer roles for managing orders and customer interaction", "Order processing and warehouse daily operations simulation", "Efficient memory handling following the Rule of 5"],
-      color: "green-400",
-      category: "Systems & Networking"
-    }
+      {
+        title: "Action Segmentation from Videos",
+        description:
+          "Python project for video action segmentation and classification using deep learning. Includes complete pipelines for preprocessing, feature extraction, model training, and evaluation on workflow videos.",
+        techStack: ["Python", "Image Processing", "Computer Vision", "Machine Learning"],
+        icon: Brain,
+        github: "https://github.com/Aseel205/Video-Action-Segmentation",
+        features: [
+          "Python-based video preprocessing & labeling",
+          "Deep learning model training & evaluation",
+          "Feature extraction and dataset preparation",
+          "Accurate segmentation of workflow videos"
+        ],
+        color: "purple-400",
+        category: "Graphics & Computer Vision"
+      }, 
+     
+      // --- Full Stack ---
+      {
+        title: "After-School Courses Calendar SaaS (commercial)",
+        description: "Multi-tenant SaaS platform for managing educational courses with advanced scheduling, user management, and real-time updates. Built with modern architecture and cloud deployment.",
+        techStack: [".NET Core 7", "React", "AWS", "Docker", "PostgreSQL", "Microservices"],
+        icon: Server,
+        github: "https://github.com/Aseel205/After-School-SaaS",
+        features: ["Multi-tenant architecture", "Real-time notifications", "Advanced scheduling", "Cloud deployment"],
+        color: "tech-glow",
+        category: "Full Stack"
+      },
+      {
+        title: "Notes Manager (Full-Stack MERN App)",
+        description: "Full stack web application for managing personal notes with authentication, pagination, and user-specific access control.",
+        techStack: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
+        icon: ExternalLink,
+        github: "https://github.com/Aseel205/Notes-Manager-Full-Stack-MERN-App-",
+        features: ["User login & JWT auth", "Pagination", "Secure role-based access", "JSON-based storage"],
+        color: "pink-400",
+        category: "Full Stack"
+      },
+    
+     
+    
+      // --- Systems & Networking ---
+      {
+        title: "xv6 Operating System Extensions (Unix - based)",
+        description: "Kernel-level extensions in xv6 including system calls, shared memory regions, and virtual memory updates.",
+        techStack: ["C", "Kernel Programming", "Operating Systems", "Memory Management"],
+        icon: NetworkIcon,
+        github: "https://github.com/Aseel205/operating-Systems",
+        features: ["New syscalls", "Shared memory", "Page table modifications", "Kernel synchronization"],
+        color: "blue-400",
+        category: "Systems & Networking"
+      },
+      {
+        title: "TFTP Server & Client",
+        description: "Multithreaded TFTP file transfer system with TCP/UDP networking and custom protocol handling.",
+        techStack: ["Java", "Networking", "TCP/UDP", "Multithreading"],
+        icon: NetworkIcon,
+        github: "https://github.com/Aseel205/Systems-programming/tree/main/TFTP%20Server%20client",
+        features: ["Protocol implementation", "Broadcast support", "Thread-per-client", "Concurrent transfers"],
+        color: "green-400",
+        category: "Systems & Networking"
+      },
+        {
+          title: "Set Card Game (Multithreaded Java)",
+          description: "Multithreaded implementation of the Set game with event-based UI and game logic.",
+          techStack: ["Java", "Threads", "Game Logic"],
+          icon: Brain,
+          github: "https://github.com/Aseel205/Systems-programming/tree/main/Set%20Card%20Game",
+          features: ["Threading", "Event handling", "Real-time UI", "Set logic verification"],
+          color: "yellow-400",
+          category: "Systems & Networking"
+        },
+
+
+      {
+        title: "Warehouse Management System",
+        description: "OOP-based warehouse management simulation focusing on memory safety and the Rule of 5.",
+        techStack: ["C++", "OOP", "Memory Management", "Data Structures"],
+        icon: Server,
+        github: "https://github.com/Aseel205/Systems-programming/tree/main/WareHouse/Spl",
+        features: ["Order handling", "Volunteer operations", "Customer management", "Safe memory handling"],
+        color: "green-400",
+        category: "Systems & Networking"
+      }
   ];
+    
+
     
 
 
