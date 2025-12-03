@@ -88,7 +88,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-2xl"
             >
-              Junior Software Programmer | Full-Stack & Systems Developer
+              Junior Software Engineer | Backend, Cloud Systems & AI Developer
             </motion.p>
 
             <motion.p

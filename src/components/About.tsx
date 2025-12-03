@@ -29,19 +29,19 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
+          {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               About <span className="text-tech-glow">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Software engineer passionate about building scalable backend systems,
-              cloud-native architectures, and intelligent technologies.
+              Software engineer specializing in backend engineering, distributed systems, cloud-native architectures, and intelligent technologies.
             </p>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            {/* Left Column - Main Bio */}
+            {/* Left Column – Main Bio */}
             <motion.div variants={itemVariants}>
               <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/20 shadow-card">
                 <h3 className="text-2xl font-bold mb-6 text-foreground">
@@ -49,28 +49,28 @@ const About = () => {
                 </h3>
 
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  I'm a final-semester Computer Science student at 
+                  I’m a Computer Science graduate from 
                   <span className="text-tech-glow font-semibold"> Ben-Gurion University</span> 
-                  with a <span className="text-primary font-semibold">GPA of 88</span>. My experience spans 
+                  with a <span className="text-primary font-semibold">GPA of 88</span>. My experience spans
                   <span className="text-tech-glow"> backend engineering, distributed systems, systems programming, and cloud computing</span>.
                 </p>
 
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  I build reliable and efficient software using technologies like 
+                  I build reliable, high-performance software using 
                   <span className="text-primary"> C/C++, Python, Java, JavaScript, React, Node.js, .NET Core</span>, 
-                  and cloud stacks such as <span className="text-accent-purple">AWS</span>.  
-                  My focus is on <span className="text-tech-glow">performance, scalability, and clean architecture</span>.
+                  and cloud platforms such as <span className="text-accent-purple">AWS</span>.  
+                  I’m passionate about <span className="text-tech-glow">scalability, clean architecture, and efficient system design</span>.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I love solving complex engineering problems — from kernel-level debugging in xv6,
-                  to distributed NLP systems on AWS, to cloud-native microservices.
-                  Every challenge is an opportunity to engineer better systems.
+                  I enjoy solving complex engineering challenges — from kernel-level work in xv6,
+                  to MapReduce pipelines on AWS, to cloud-native microservices. 
+                  Every problem is an opportunity to optimize, innovate, and build better systems.
                 </p>
               </Card>
             </motion.div>
 
-            {/* Right Column - Highlights */}
+            {/* Right Column – Highlights */}
             <motion.div variants={itemVariants} className="space-y-6">
 
               {/* Education */}
@@ -80,9 +80,9 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-foreground">Education</h4>
                 </div>
                 <p className="text-muted-foreground">
-                  B.Sc. Computer Science – Ben-Gurion University 2025
+                  B.Sc. Computer Science – Ben-Gurion University (2025)
                 </p>
-                <p className="text-primary font-semibold">GPA: 88 </p>
+                <p className="text-primary font-semibold">GPA: 88</p>
               </Card>
 
               {/* Place-IL */}
@@ -103,7 +103,7 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-foreground">MST Microservices Program</h4>
                 </div>
                 <p className="text-muted-foreground">
-                  Completing a 4.5-month, 300-hour program in Java, Spring Boot, microservices, Docker, Kubernetes, and DevOps tooling.
+                  Completed a 4.5-month, 300-hour program in Java, Spring Boot, microservices, Docker, Kubernetes, and DevOps tooling.
                 </p>
               </Card>
 
@@ -125,16 +125,12 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-foreground">Interests</h4>
                 </div>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Gaming </li>
-                  <li>• Coding & Algorithmic Challenges </li>
-                  <li>• 3D Graphics & Visualization </li>
-                  <li>• Mentoring  & Continuous Learning </li>
-
+                  <li>• Gaming</li>
+                  <li>• Coding & Algorithmic Challenges</li>
+                  <li>• 3D Graphics & Visualization</li>
+                  <li>• Mentoring & Continuous Learning</li>
                 </ul>
               </Card>
-
-              Gaming 
-
 
               {/* Core Values */}
               <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/20 shadow-card hover:shadow-glow transition-all duration-300">

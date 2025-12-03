@@ -21,7 +21,7 @@ const Skills = () => {
       color: "tech-glow"
     },
     {
-      title: "System Programming", 
+      title: "System Programming",
       icon: Cpu,
       skills: ["Linux", "Multithreading", "Embedded Systems", "Compilation Principles", "Performance Optimization"],
       color: "accent-purple"
@@ -29,7 +29,13 @@ const Skills = () => {
     {
       title: "Machine Learning",
       icon: Brain,
-      skills: ["Full Universty Advacned course",   "Model Training", "Deep Learning", "Semantic Analysis", "Classification"],
+      skills: [
+        "Advanced university-level ML course",
+        "Model Training", 
+        "Deep Learning", 
+        "Semantic Analysis", 
+        "Classification"
+      ],
       color: "primary"
     },
     {
@@ -47,13 +53,13 @@ const Skills = () => {
     {
       title: "Backend",
       icon: Server,
-      skills: [".NET Core", "Node.js", "PostgreSQL", "REST APIs", "Database Design" ,  "MicroServices"],
+      skills: [".NET Core", "Node.js", "PostgreSQL", "REST APIs", "Database Design", "Microservices"],
       color: "orange-400"
     },
     {
       title: "Cloud & DevOps",
       icon: Cloud,
-      skills: ["AWS", "Docker", "kuberntees" , "Distributed Systems",  "CI/CD"],
+      skills: ["AWS", "Docker", "Kubernetes", "Distributed Systems", "CI/CD"],
       color: "cyan-400"
     },
     {
@@ -74,9 +80,7 @@ const Skills = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.1 }
     }
   };
 
@@ -98,6 +102,7 @@ const Skills = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
+          {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               Technical <span className="text-tech-glow">Skills</span>
@@ -107,6 +112,7 @@ const Skills = () => {
             </p>
           </motion.div>
 
+          {/* Skill Cards */}
           <motion.div 
             variants={containerVariants}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
