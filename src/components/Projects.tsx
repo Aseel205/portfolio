@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, Server, Brain, Monitor, Cloud, Shield } from 'lucide-react';
+import { ExternalLink, Github, Server, Brain, Monitor, Cloud, Shield ,   Network,   Bell,   Activity,   Layers,   Boxes, Workflow    } from 'lucide-react';
+
+ 
+
+
+
+
 import { Network as NetworkIcon } from "lucide-react";
 
 
@@ -12,7 +18,33 @@ const Projects = () => {
     // CLOUD & DISTRIBUTED PROGRAMMING
     // ============================
     {
-      title: "Semantic Similarity System (AWS MapReduce)",
+      title: "AlertHub – Distributed Event-Driven Alerting Platform",
+      description:
+        "Cloud-native, event-driven alerting system built with microservices, Kafka, Docker, and Kubernetes. Supports metric evaluation, rule-based actions, asynchronous notifications, and centralized logging.",
+      techStack: [
+        "Java 17",
+        "Spring Boot",
+        "Apache Kafka",
+        "MySQL",
+        "Docker",
+        "Kubernetes",
+        "Minikube",
+        "Microservices"
+      ],
+      icon: Bell,
+      github: "https://github.com/Aseel205/AlertHub",
+      features: [
+        "Event-driven architecture with Kafka",
+        "Microservices-based system design",
+        "Dockerized services with Kubernetes orchestration",
+        "Asynchronous notifications (Email & SMS)",
+        "Centralized logging and evaluation service"
+      ],
+      color: "tech-glow",
+      category: "Backend & Microservices"
+    },
+    {
+      title: "Semantic Similarity System",
       description:
         "Distributed NLP system on AWS EMR using MapReduce to process large Hebrew corpora and classify semantic similarity using machine learning.",
       techStack: ["Java", "AWS EMR", "Hadoop", "MapReduce", "Machine Learning", "NLP"],
@@ -26,14 +58,14 @@ const Projects = () => {
         "Scalable architecture"
       ],
       color: "accent-purple",
-      category: "Cloud & Distributed Programming"
+      category: "Cloud & Distributed Systems"
     },
     {
-      title: "Hebrew Trigram Word Prediction (MapReduce)",
+      title: "Hebrew Trigram Word Prediction ",
       description:
         "Large-scale text processing project using MapReduce to compute conditional trigram probabilities for next-word prediction.",
       techStack: ["Java", "AWS EMR", "MapReduce", "Distributed Systems", "Hadoop"],
-      icon: Brain,
+      icon: Activity,
       github:
         "https://github.com/Aseel205/Distributed-systems-programming/tree/main/Knowledge-base%20for%20Word%20Prediction",
       features: [
@@ -43,10 +75,10 @@ const Projects = () => {
         "Fully distributed pipeline"
       ],
       color: "violet-400",
-      category: "Cloud & Distributed Programming"
+      category: "Cloud & Distributed Systems"
     },
     {
-      title: "Cloud File Processor (EC2 + SQS + S3)",
+      title: "Cloud File Processor",
       description:
         "Distributed system for processing PDF documents using EC2 worker nodes, SQS job queues, and S3 storage.",
       techStack: ["Python", "AWS EC2", "AWS S3", "AWS SQS", "Docker", "Distributed Systems"],
@@ -60,7 +92,7 @@ const Projects = () => {
         "Cloud-native orchestration"
       ],
       color: "cyan-400",
-      category: "Cloud & Distributed Programming"
+      category: "Cloud & Distributed Systems"
     },
 
     // ============================
@@ -71,7 +103,7 @@ const Projects = () => {
       description:
         "3D rendering engine built with C++ and OpenGL implementing realistic lighting, reflections, shadows, transparency, and anti-aliasing.",
       techStack: ["C++", "OpenGL", "3D Rendering", "Shader Programming"],
-      icon: Monitor,
+      icon: Layers,
       github:
         "https://github.com/Aseel205/ComputerGraphics/tree/main/Ray%20Tracing%20Implementation",
       features: ["Physically-based shading", "Anti-aliasing", "Optimized ray traversal"],
@@ -156,10 +188,10 @@ const Projects = () => {
         "Cloud-native deployment"
       ],
       color: "tech-glow",
-      category: "Full Stack"
+      category: "Backend & Microservices"
     },
     {
-      title: "Notes Manager (MERN Full Stack)",
+      title: "Notes Manager (MERN Stack)",
       description:
         "Full-stack notes management app with authentication, pagination, secure access control, and modern React UI.",
       techStack: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
@@ -188,7 +220,7 @@ const Projects = () => {
         "Worker-based isolation"
       ],
       color: "rose-400",
-      category: "Cybersecurity & Tooling"
+      category: "Security & Developer Tooling"
     },
 
     // ============================
@@ -199,23 +231,23 @@ const Projects = () => {
       description:
         "Kernel-level work on xv6 including new system calls, shared memory, and updates to the virtual memory subsystem.",
       techStack: ["C", "Operating Systems", "Kernel Programming", "Memory Management"],
-      icon: NetworkIcon,
+      icon: Monitor,
       github: "https://github.com/Aseel205/operating-Systems",
       features: ["Custom syscalls", "Shared memory regions", "Page table updates"],
       color: "blue-400",
-      category: "Systems & Networking"
+      category: "Systems Programming & Networking"
     },
     {
       title: "TFTP Server & Client",
       description:
         "Multithreaded implementation of a TFTP server/client with custom protocol handling and concurrent file transfers.",
       techStack: ["Java", "Networking", "TCP/UDP", "Threads"],
-      icon: NetworkIcon,
+      icon: Network,
       github:
         "https://github.com/Aseel205/Systems-programming/tree/main/TFTP%20Server%20client",
       features: ["Thread-per-client model", "UDP/TCP support", "Broadcast features"],
       color: "green-400",
-      category: "Systems & Networking"
+      category: "Systems Programming & Networking"
     },
     {
       title: "Set Card Game (Multithreaded Java)",
@@ -227,10 +259,10 @@ const Projects = () => {
         "https://github.com/Aseel205/Systems-programming/tree/main/Set%20Card%20Game",
       features: ["Threading", "UI events", "Real-time game logic"],
       color: "yellow-400",
-      category: "Systems & Networking"
+      category: "Systems Programming & Networking"
     },
     {
-      title: "Warehouse Management System (Rule of 5)",
+      title: "Warehouse Management System",
       description:
         "C++ OOP project modeling warehouse operations with strong focus on memory safety, object lifecycle management, and the Rule of Five.",
       techStack: ["C++", "OOP", "Memory Management", "Data Structures"],
@@ -239,7 +271,7 @@ const Projects = () => {
         "https://github.com/Aseel205/Systems-programming/tree/main/WareHouse/Spl",
       features: ["Volunteer management", "Order handling", "Safe memory design"],
       color: "green-400",
-      category: "Systems & Networking"
+      category: "Systems Programming & Networking"
     }
   ];
 
