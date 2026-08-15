@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "login": "Aseel205",
+    "name": "Aseel Biadsy",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/178262228?v=4",
+    "htmlUrl": "https://github.com/Aseel205",
+    "bio": "Computer Science student at Ben-Gurion University with hands-on experience in C++, Java, Python, JavaScript/TypeScript, and Scheme.",
+    "publicRepos": 16,
+    "followers": 7,
+    "following": 10,
+    "totalStars": 0,
+    "createdAt": "2024-08-13T06:36:16Z"
+  },
+  "languages": [
+    {
+      "name": "Python",
+      "repoCount": 4,
+      "percent": 26.7
+    },
+    {
+      "name": "Java",
+      "repoCount": 3,
+      "percent": 20
+    },
+    {
+      "name": "TypeScript",
+      "repoCount": 3,
+      "percent": 20
+    },
+    {
+      "name": "C",
+      "repoCount": 2,
+      "percent": 13.3
+    },
+    {
+      "name": "C++",
+      "repoCount": 1,
+      "percent": 6.7
+    },
+    {
+      "name": "HTML",
+      "repoCount": 1,
+      "percent": 6.7
+    },
+    {
+      "name": "OCaml",
+      "repoCount": 1,
+      "percent": 6.7
+    }
+  ],
+  "fetchedAt": "2026-08-15T11:18:27.488Z",
+  "stale": false
+}
